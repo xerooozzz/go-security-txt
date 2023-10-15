@@ -16,8 +16,36 @@ import (
 func handleRequest(domain string) (r []byte, statusCode int, err error) {
 
 	url := []string{
-		"https://" + domain + securityTXT,
 		"https://" + domain + securityTXTAlt,
+		"https://" + domain + securityTXTAlt2,
+		"https://" + domain + securityTXTAlt3,
+		"https://" + domain + securityTXTAlt4,
+		"https://" + domain + securityTXTAlt5,
+		"https://" + domain + securityTXTAlt6,
+		"https://" + domain + securityTXTAlt7,
+		"https://" + domain + securityTXTAlt8,
+		"https://" + domain + securityTXTAlt9,
+		"https://" + domain + securityTXTAlt10,
+		"https://" + domain + securityTXTAlt11,
+		"https://" + domain + securityTXTAlt12,
+		"https://" + domain + securityTXTAlt13,
+		"https://" + domain + securityTXTAlt14,
+		"https://" + domain + securityTXTAlt15,
+		"https://" + domain + securityTXTAlt16,
+		"https://" + domain + securityTXTAlt17,
+		"https://" + domain + securityTXTAlt18,
+		"https://" + domain + securityTXTAlt19,
+		"https://" + domain + securityTXTAlt20,
+		"https://" + domain + securityTXTAlt21,
+		"https://" + domain + securityTXTAlt22,
+		"https://" + domain + securityTXTAlt23,
+		"https://" + domain + securityTXTAlt24,
+		"https://" + domain + securityTXTAlt25,
+		"https://" + domain + securityTXTAlt26,
+		"https://" + domain + securityTXTAlt27,
+		"https://" + domain + securityTXTAlt28,
+		"https://" + domain + securityTXTAlt29,
+		"https://" + domain + securityTXTAlt30,
 	}
 
 	req, _ := http.NewRequest("GET", url[0], nil)
