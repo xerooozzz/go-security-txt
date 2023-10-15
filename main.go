@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	defaultWorkers = 50
+	defaultWorkers = 100
 )
 
 var domain, inputFile, outputFilename string
@@ -90,7 +90,7 @@ func runWithInputFile() {
 func runWithInputDomain() {
 	// Use basic domain validator
 	if !utils.IsValidDomain(domain) {
-		log.Fatalf("%s doesn't look like a domain", domain)
+		// log.Fatalf("%s doesn't look like a domain", domain)
 	}
 
 	result, err := processSingleDomain(domain)
